@@ -9,8 +9,9 @@ const { data: web, loading, error } = useFetch(`${API_BASE}/webprojects`, []);
 
 
 
-  if (loading) return <p>⏳ Loading projects...</p>;
-  if (error) return <p style={{ color: "red" }}>❌ Error: {error}</p>;
+if (loading) return <p>Loading...</p>;
+if (error) return <p style={{ color: "red" }}>Error: {error}</p>;
+if (!web || web.length === 0) return <p>No projects found</p>;
 
     return ( 
 
