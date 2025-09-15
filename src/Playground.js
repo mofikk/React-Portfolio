@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import useFetch from "./UseFetch";
+import { API_BASE } from "./config";
 
 const Playground = () => {
 
 
- const {data: gallery, loading, error} = useFetch('http://localhost:5000/playground', []);
+const { data: gallery } = useFetch(`${API_BASE}/playground`, []);
+
 
  if (error) return <p>Error: {error}</p>;
     return ( 

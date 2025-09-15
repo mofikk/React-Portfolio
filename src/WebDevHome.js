@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
+
 import useFetch from "./UseFetch";
+import { API_BASE } from "./config";
 const WebDevHome = () => {
 
 
-    const {
-    data: web,
-    loading,
-    error
-  } = useFetch("http://localhost:5000/webProjects", []);
+const { data: web, loading, error } = useFetch(`${API_BASE}/webprojects`, []);
+
+
 
   if (loading) return <p>⏳ Loading projects...</p>;
   if (error) return <p style={{ color: "red" }}>❌ Error: {error}</p>;
