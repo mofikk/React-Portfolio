@@ -4,13 +4,9 @@ const connectDB = require("./db");
 
 const app = express();
 
-// ✅ Allow React frontend requests
-app.use(cors({
-  origin: [
-    "http://localhost:3000", 
-    "https://your-frontend-service.onrender.com"
-  ]
-}));
+
+app.use(cors());
+
 app.use(express.json());
 
 let db;
