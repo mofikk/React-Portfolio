@@ -1,0 +1,181 @@
+.web-dev-title {
+    width: 50%;
+}
+
+.web-dev-title h1 {
+    font-weight: normal;
+    font-size: 150%;
+
+}
+
+.web-dev-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.stacks {
+    font-size: 50px;
+}
+
+.web-dev-stacks p {
+    text-align: center;
+}
+
+.web-dev-stacks span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.web-dev-home {
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.web-dev-about-main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+.web-dev-show {
+    display: block;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.web-dev-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.web-dev-card {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* border: 2px solid var(--primary-color); */
+    border-radius: 20px;
+}
+
+.web-dev-card a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.web-dev-card a:hover {
+    color: wheat;
+}
+
+.web-dev-card h2 {
+    font-size: 150%;
+    margin: 10px;
+    padding: 0;
+}
+
+.web-dev-card p {
+    font-size: 100%;
+    margin: 10px;
+    padding: 0;
+}
+
+
+.web-dev-skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.skill-tag {
+    background-color: wheat;
+    color: black;
+    padding: 3px 6px;
+    border-radius: 10px;
+    font-size: 90%;
+}
+
+
+.web-dev-card i {
+    margin-left: 8px;
+}
+
+
+/* 
+
+.footer {
+    background: var(--secondary-color);
+    border-top: 1.5px solid var(--primary-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer a:hover {
+    color: var(--link-hover-color);
+} */
+
+
+
+
+
+
+
+
+
+.skeleton {
+    background: linear-gradient(90deg, #eee, #ddd, #eee);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.skeleton-title {
+    height: 20px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.skeleton-text {
+    height: 15px;
+    width: 90%;
+    margin-bottom: 6px;
+}
+
+.skeleton-tag {
+    height: 18px;
+    width: 60px;
+    margin-right: 6px;
+    display: inline-block;
+    border-radius: 999px;
+}
