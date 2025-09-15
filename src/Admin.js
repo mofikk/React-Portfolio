@@ -7,7 +7,7 @@ import ToTop from './admin/components/ToTop';
 import Dashboard from './admin/pages/Dashboard';
 import AdminPlayground from './admin/pages/AdminPlayground';
 
-import './admin/css/mine.css'; 
+// import './admin/css/mine.css'; 
 
 
 function Admin() {
