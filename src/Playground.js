@@ -5,7 +5,7 @@ import { API_BASE } from "./config";
 const Playground = () => {
 
 
-const { data: gallery } = useFetch(`${API_BASE}/playground`, []);
+const { data: gallery, error } = useFetch(`${API_BASE}/playground`, []);
 
 
  if (error) return <p>Error: {error}</p>;
