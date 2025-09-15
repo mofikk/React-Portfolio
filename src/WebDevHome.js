@@ -78,27 +78,21 @@ if (!web || web.length === 0) return <p>No projects found</p>;
             
 
 
-                { web.map((dev) => (
-
-                    <div className="web-dev-card" key={dev._id || dev.id}>
-
-                        <h2><a target="blank" href={ dev.link }> { dev.name } <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </h2>
-                        <p>
-                            { dev.desc }
-                        </p>
-                        <div className="web-dev-skill-tags">
-                            { dev.tags.map((tag, index) => (
-
-                                <span className="skill-tag" key={index}>{tag}</span>
-
-                            ))}
-                            
-                        </div> 
-
-                    </div>
-
-                 )) }
+              {web && web.map((dev) => (
+  <div className="web-dev-card" key={dev._id || dev.id}>
+    <h2>
+      <a target="_blank" rel="noopener noreferrer" href={dev.link}>
+        {dev.name} <i className="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </h2>
+    <p>{dev.desc}</p>
+    <div className="web-dev-skill-tags">
+      {dev.tags && dev.tags.map((tag, index) => (
+        <span className="skill-tag" key={index}>{tag}</span>
+      ))}
+    </div>
+  </div>
+))}
 
 
 
